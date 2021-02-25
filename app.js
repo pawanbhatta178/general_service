@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 (async () => {
-  app.post("/challenge", authenticateToken, challenge);
+  app.post("/challenge", challenge);
   app.post("/submissions", authenticateToken, getAllSubmissions);
   app.listen(PORT, () => console.log(`Listening at port ${PORT}`));
 })();
