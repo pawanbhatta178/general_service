@@ -28,8 +28,4 @@ const LeaderBoard = (props = {}) => {
   };
 };
 
-LeaderBoard({ forChallenge: "1", basedOn: "time_taken" })
-  .get()
-  .then((data) => console.log(data));
-
 module.exports = { LeaderBoard };
